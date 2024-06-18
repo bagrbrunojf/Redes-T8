@@ -1,0 +1,240 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}{\f2\fnil\fcharset238 Calibri;}}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sl240\slmult1\qj\f0\fs22\lang22 Command Executed:\par
+ping google.com\par
+\par
+Command Output:\par
+Disparando google.com [142.250.79.46] com 32 bytes de dados:\par
+Resposta de 142.250.79.46: bytes=32 tempo=12ms TTL=57\par
+Resposta de 142.250.79.46: bytes=32 tempo=8ms TTL=57\par
+Resposta de 142.250.79.46: bytes=32 tempo=7ms TTL=57\par
+Resposta de 142.250.79.46: bytes=32 tempo=8ms TTL=57\par
+\par
+Estat\'a1sticas do Ping para 142.250.79.46:\par
+    Pacotes: Enviados = 4, Recebidos = 4, Perdidos = 0 (0% de\par
+             perda),\par
+Aproximar um n\'a3mero redondo de vezes em milissegundos:\par
+    M\'a1nimo = 7ms, M ximo = 12ms, M\'82dia = 8ms\par
+-----------------------------------------------------------------------\par
+Command Executed:\par
+tracert google.com\par
+\par
+Command Output:\par
+Rastreando a rota para google.com [142.250.79.46]\par
+com no m ximo 30 saltos:\par
+\par
+  1     1 ms     4 ms     1 ms  172.192.110.1 \par
+  2     *        *        *     Esgotado o tempo limite do pedido.\par
+  3     6 ms     6 ms     3 ms  179.182.46.244 \par
+  4     *        *        *     Esgotado o tempo limite do pedido.\par
+  5    36 ms    11 ms    11 ms  72.14.243.38 \par
+  6    10 ms    17 ms    12 ms  142.251.77.41 \par
+  7     7 ms     8 ms     7 ms  142.251.48.157 \par
+  8    17 ms    11 ms     7 ms  rio07s04-in-f14.1e100.net [142.250.79.46] \par
+\par
+Rastreamento conclu\'a1do.\par
+-------------------------------------------------------------\par
+Command Executed:\par
+ipconfig\par
+\par
+Command Output:\par
+Configura\f1\'87\f0\'c6o de IP do Windows\par
+\par
+\par
+Adaptador de Rede sem Fio Conex\'c6o Local* 9:\par
+\par
+   Estado da m\'a1dia. . . . . . . . . . . . . .  : m\'a1dia desconectada\par
+   Sufixo DNS espec\'a1fico de conex\'c6o. . . . . . : \par
+\par
+Adaptador de Rede sem Fio Conex\'c6o Local* 10:\par
+\par
+   Estado da m\'a1dia. . . . . . . . . . . . . .  : m\'a1dia desconectada\par
+   Sufixo DNS espec\'a1fico de conex\'c6o. . . . . . : \par
+\par
+Adaptador de Rede sem Fio Wi-Fi 3:\par
+\par
+   Sufixo DNS espec\'a1fico de conex\'c6o. . . . . . : PROZ.LAB\par
+   Endere\f1\'87o IPv6 de link local . . . . . . . . : fe80::d444:198b:882b:87c%5\par
+   Endere\'87o IPv4. . . . . . . .  . . . . . . . : 172.192.110.176\par
+   M scara de Sub-rede . . . . . . . . . . . . : 255.255.255.0\par
+   Gateway Padr\f0\'c6o. . . . . . . . . . . . . . . : 172.192.110.1\par
+\par
+Adaptador Ethernet Conex\'c6o de Rede Bluetooth 3:\par
+\par
+   Estado da m\'a1dia. . . . . . . . . . . . . .  : m\'a1dia desconectada\par
+   Sufixo DNS espec\'a1fico de conex\'c6o. . . . . . : \par
+------------------------------------------------------------------\par
+Command Executed:\par
+netstat -e\par
+\par
+Command Output:\par
+Estat\'a1sticas de interface\par
+\par
+                           Recebido         Enviado\par
+\par
+Bytes                    1754075262       174817548\par
+Pacotes unicast             1196064          966414\par
+Pacotes n\'c6o unicast            6144            7674\par
+Descartados                       0               0\par
+Erros                             0               0\par
+Prot. desconhecidos               0\par
+--------------------------------------------------------------------\par
+Command Executed:\par
+systeminfo | find "Tempo de Inicializa\'e7\'e3o do Sistema"\par
+\par
+Command Output:\par
+Tempo de Inicializa\f1\'87\f0\'c6o do Sistema:         18/06/2024, 09:08:17\par
+---------------------------------------------------------------------------------\par
+Command Executed:\par
+netstat -an | findstr :5000\par
+\par
+Command Output:\par
+  TCP    127.0.0.1:5000         0.0.0.0:0              LISTENING\par
+  TCP    127.0.0.1:5000         127.0.0.1:52428        ESTABLISHED\par
+  TCP    127.0.0.1:5000         127.0.0.1:52429        ESTABLISHED\par
+  TCP    127.0.0.1:52424        127.0.0.1:5000         TIME_WAIT\par
+  TCP    127.0.0.1:52425        127.0.0.1:5000         TIME_WAIT\par
+  TCP    127.0.0.1:52428        127.0.0.1:5000         ESTABLISHED\par
+  TCP    127.0.0.1:52429        127.0.0.1:5000         ESTABLISHED\par
+----------------------------------------------------------------------------------\par
+Command Executed:\par
+route print\par
+\par
+Command Output:\par
+===========================================================================\par
+Lista de interfaces\par
+ 19...6c 94 66 46 49 d5 ......Microsoft Wi-Fi Direct Virtual Adapter\par
+ 15...6e 94 66 46 49 d4 ......Microsoft Wi-Fi Direct Virtual Adapter #2\par
+  5...6c 94 66 46 49 d4 ......Intel(R) Wireless-AC 9560\par
+ 13...6c 94 66 46 49 d8 ......Bluetooth Device (Personal Area Network) #3\par
+  1...........................Software Loopback Interface 1\par
+===========================================================================\par
+\par
+Tabela de rotas IPv4\par
+===========================================================================\par
+Rotas ativas:\par
+Endere\f1\'87o de rede          M scara   Ender. gateway       Interface   Custo\par
+          0.0.0.0          0.0.0.0    172.192.110.1  172.192.110.176     35\par
+        127.0.0.0        255.0.0.0      No v\f0\'a1nculo         127.0.0.1    331\par
+        127.0.0.1  255.255.255.255      No v\'a1nculo         127.0.0.1    331\par
+  127.255.255.255  255.255.255.255      No v\'a1nculo         127.0.0.1    331\par
+    172.192.110.0    255.255.255.0      No v\'a1nculo   172.192.110.176    291\par
+  172.192.110.176  255.255.255.255      No v\'a1nculo   172.192.110.176    291\par
+  172.192.110.255  255.255.255.255      No v\'a1nculo   172.192.110.176    291\par
+        224.0.0.0        240.0.0.0      No v\'a1nculo         127.0.0.1    331\par
+        224.0.0.0        240.0.0.0      No v\'a1nculo   172.192.110.176    291\par
+  255.255.255.255  255.255.255.255      No v\'a1nculo         127.0.0.1    331\par
+  255.255.255.255  255.255.255.255      No v\'a1nculo   172.192.110.176    291\par
+===========================================================================\par
+Rotas persistentes:\par
+  Nenhuma\par
+\par
+Tabela de rotas IPv6\par
+===========================================================================\par
+Rotas ativas:\par
+ Se destino de rede de m\'82trica      Gateway\par
+  1    331 ::1/128                  No v\'a1nculo\par
+  5    291 fe80::/64                No v\'a1nculo\par
+  5    291 fe80::d444:198b:882b:87c/128\par
+                                    No v\'a1nculo\par
+  1    331 ff00::/8                 No v\'a1nculo\par
+  5    291 ff00::/8                 No v\'a1nculo\par
+===========================================================================\par
+Rotas persistentes:\par
+  Nenhuma\par
+-----------------------------------------------------------------------------------------------------------------------\par
+Command Executed:\par
+arp -a\par
+\par
+Command Output:\par
+Interface: 172.192.110.176 --- 0x5\par
+  Endere\f1\'87o IP           Endere\'87o f\f0\'a1sico       Tipo\par
+  172.192.110.1         78-45-58-f8-3a-07     din\f2\u402?mico  \par
+  224.0.0.22            01-00-5e-00-00-16     est tico  \par
+  224.0.0.251           01-00-5e-00-00-fb     est tico  \par
+  224.0.0.252           01-00-5e-00-00-fc     est tico  \par
+  239.255.255.250       01-00-5e-7f-ff-fa     est tico  \par
+  239.255.255.253       01-00-5e-7f-ff-fd     est tico  \par
+  255.255.255.255       ff-ff-ff-ff-ff-ff     est tico  \par
+\f0\lang1046 ----------------------------------------------------------------------------------\par
+Command Executed:\par
+nbtstat -r\par
+\par
+Command Output:\par
+    Resolu\f1\'87\f0\'c6o de nomes NetBIOS e Estat\'a1sticas de registro\par
+    --------------------------------------------------------\par
+\par
+    Resolvidas por difus\'c6o          = 0\par
+    Resolvido por servidor de nome  = 0\par
+\par
+    Registrado por difus\'c6o          = 3\par
+    Registrado por servidor de nome = 0\par
+-----------------------------------------------------------------------------------\par
+Command Executed:\par
+nbtstat -n\par
+\par
+Command Output:\par
+    \par
+Wi-Fi 3:\par
+Endere\f1\'87o-Ip n\f0\'a2: [172.192.110.176] Identificador de escopo: []\par
+\par
+            Tabela de nomes locais de NetBIOS\par
+\par
+       Nome               Tipo         Status\par
+    ---------------------------------------------\par
+    MGJUI-LAB07N   <20>  EXCLUSIVO   Registrado \par
+    MGJUI-LAB07N   <00>  EXCLUSIVO   Registrado \par
+    WORKGROUP      <00>  GRUPO       Registrado \par
+    \par
+Conex\'c6o de Rede Bluetooth 3:\par
+Endere\f1\'87o-Ip n\f0\'a2: [0.0.0.0] Identificador de escopo: []\par
+\par
+    N\'c6o h  nomes no cache\par
+    \par
+Conex\'c6o Local* 9:\par
+Endere\f1\'87o-Ip n\f0\'a2: [0.0.0.0] Identificador de escopo: []\par
+\par
+    N\'c6o h  nomes no cache\par
+    \par
+Conex\'c6o Local* 10:\par
+Endere\f1\'87o-Ip n\f0\'a2: [0.0.0.0] Identificador de escopo: []\par
+\par
+    N\'c6o h  nomes no cache\par
+-------------------------------------------------------------------------------------------------------------------------\par
+Command Executed:\par
+hostname\par
+\par
+Command Output:\par
+MGJUI-LAB07N\par
+----------------------------------------------------------------------------------------------------\par
+Command Executed:\par
+nslookup uol.com.br 8.8.8.8\par
+\par
+Command Output:\par
+DNS request timed out.\par
+    timeout was 2 seconds.\par
+Servidor:  UnKnown\par
+Address:  8.8.8.8\par
+\par
+DNS request timed out.\par
+    timeout was 2 seconds.\par
+DNS request timed out.\par
+    timeout was 2 seconds.\par
+DNS request timed out.\par
+    timeout was 2 seconds.\par
+DNS request timed out.\par
+    timeout was 2 seconds.\par
+------------------------------------------------------------------------------------------------------------------\par
+Command Executed:\par
+netsh interface ipv4 show interfaces\par
+\par
+Command Output:\par
+\'d6nd     Met         MTU          Estado                Nome\par
+---  ----------  ----------  ------------  ---------------------------\par
+  1          75  4294967295  connected     Loopback Pseudo-Interface 1\par
+ 19          25        1500  disconnected  Conex\'c6o Local* 9\par
+ 15          25        1500  disconnected  Conex\'c6o Local* 10\par
+  5          35        1500  connected     Wi-Fi 3\par
+ 13          65        1500  disconnected  Conex\'c6o de Rede Bluetooth 3\lang22\par
+}
+ 
